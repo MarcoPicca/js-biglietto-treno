@@ -10,7 +10,9 @@ if (agePassenger < 18){
     standardPrice = standardPrice - (standardPrice * 0.40)
 }
 
-document.getElementById('tiket').innerHTML = 'Il prezzo del tuo biglietto è:     ' + standardPrice + '€';
+let realPrice = standardPrice.toFixed(1);
+
+document.getElementById('tiket').innerHTML = 'Il prezzo del tuo biglietto è: ' + realPrice + '€';
 
 
 
